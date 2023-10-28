@@ -1,0 +1,167 @@
+.home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.home .div-2 {
+    background-color: rgba(255, 255, 255, 1);
+    height: 1080px;
+    position: relative;
+    width: 1920px;
+}
+
+.home .overlap {
+    background-color: #ffffff;
+    height: 1017px;
+    left: 0;
+    position: absolute;
+    top: 63px;
+    width: 1920px;
+}
+
+.home .dental-patient-list {
+    color: rgba(66, 66, 82, 1);
+    font-family: "Pretendard-Bold", Helvetica;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    left: 50px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+}
+
+.home .frame-6 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;      /* space between rows */
+    left: 80px;
+    position: absolute;
+    top: 128px;
+    width: 2500px;
+    justify-content: center;
+}
+
+.home .frame-wrapper {
+    align-items: center;
+    background-color: rgba(243, 247, 255, 1);
+    border: 1px solid;
+    border-color: rgba(1, 89, 228, 1);
+    border-radius: 15px;
+    display: flex;
+    gap: 24px;
+    height: 196px;
+    justify-content: left;
+    padding: 24px;
+    position: relative;
+    width: 438px;
+}
+
+.home .frame-7 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    justify-content: center;
+    position: relative;
+}
+
+.home .ic-round-add {
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.home .new-patient {
+    color: rgba(1, 89, 228, 1);
+    font-family: "Pretendard-Bold", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 16px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.home .patient-item-instance {
+    background-color: rgba(255, 167, 64, 1) !important;
+    flex: 0 0 auto !important;
+}
+
+.home .search-instance {
+    width: 420px;
+    left: 1405px !important;
+    position: absolute !important;
+    top: 10px !important;
+}
+
+.home .header-instance {
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.home .header-2 {
+    width: 1920px !important;
+}
+
+.home .header-3 {
+    border: unset !important;
+    border-color: rgba(231, 235, 242, 1) !important;
+    position: relative !important;
+}
+
+.home .round-button {
+    width: 50px; /* Set your desired width and height for a round button */
+    height: 50px;
+    background-color: white; /* Set your desired background color */
+    border: 2px #3498db;
+    border-radius: 50%; /* Makes the button round */
+    /* font-size: 16px; */
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.home .frame-screen {
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+}
+
+.home .ios-g {
+    width: 70px;
+    height: 20px;
+    background-color: #3498db;
+    border: 2px;
+    border-radius: 15px;
+    color: #3498db;
+    cursor: pointer;
+    background-image: url('./aitick.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.home .cbct {
+    width: 70px;
+    height: 20px;
+    background-color: orange;
+    border: 2px;
+    border-radius: 15px;
+    color: #3498db;
+    cursor: pointer;
+    background-image: url('./aitick.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
