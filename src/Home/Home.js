@@ -44,7 +44,7 @@ export const Home = () => {
                                             <Box className="cbct" style={{marginBottom: "5px", color: "white", fontSize: "12px", paddingLeft: "8px", paddingTop: "2px"}}>CBCT</Box>
                                         </div>
                                         <List>                            
-                                            <ListItem style={{display: "block"}}>
+                                            <ListItem style={{display: "block", paddingLeft: "2px"}}>
                                                 <ListItemText style={{marginBottom: "30px"}}
                                                     primary="Kang kung wong"                                                    
                                                 />
