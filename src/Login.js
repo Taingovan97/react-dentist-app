@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import {Tab, Tabs, TextField, IconButton, FormHelperText, Button} from '@mui/material'
 import {Visibility, VisibilityOff} from '@mui/icons-material'
-import './App.css';
+import './Login.css';
 import {Link} from 'react-router-dom'
 import logo from './frame-14.svg'
 
-function App() {
+function Login() {
   const [tabValue, setTabValue] = useState(0); // Set the initial tab value
 
   const handleChange = (event, newValue) => {
@@ -77,4 +77,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
