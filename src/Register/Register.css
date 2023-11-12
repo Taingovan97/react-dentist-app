@@ -1,0 +1,211 @@
+.register {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .register .div-2 {
+    background-color: rgba(255, 255, 255, 1);
+    height: 1080px;
+    position: relative;
+    width: 1920px;
+  }
+  
+  .register .produced-by-ainsight {
+    color: rgba(46, 46, 46, 1);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 895px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    text-align: center;
+    top: 1001px;
+  }
+  
+  .register .span {
+    line-height: 16px;
+  }
+  
+  .register .text-wrapper-3 {
+    font-family: "Pretendard-Bold", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 16px;
+  }
+  
+  .register .text-wrapper-4 {
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  
+  .register .frame-2 {
+    align-items: flex-start;
+    background-color: #f3f7ff;
+    display: inline-flex;
+    flex-direction: column;
+    left: 624px;
+    position: absolute;
+    top: 183px;
+  }
+  
+  .register .frame-3 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    width: 672px;
+  }
+  
+  .register .tabs-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    width: unset !important;
+  }
+  
+  .register .frame-4 {
+    align-items: center;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    padding: 60px 0px;
+    position: relative;
+    width: 672px;
+  }
+  
+  .register .frame-5 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .register .input-field-instance {
+    flex: 0 0 auto !important;
+  }
+  
+  .register .frame-6 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+    width: 438px;
+  }
+  
+  .register .design-component-instance-node {
+    align-self: stretch !important;
+    width: 100% !important;
+  }
+  
+  .register .input-field-2 {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-grow: 1 !important;
+  }
+  
+  .register .frame-7 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+
+  }
+  
+  .register .text-wrapper-5 {
+    color: rgba(46, 46, 46, 1);
+    font-family: "Pretendard-Bold", Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 16px;
+    margin-top: -10px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .register .frame-8 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    position: relative;
+    margin-top: -10px;
+  }
+
+  .register .toggleBtn {
+    height: 56px;
+    border-radius: 15px;
+  }
+  
+  .register .line {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 95%;
+    margin-left: 10px;
+  }
+  
+  .register .component-1 {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    width: 438px !important;
+  }
+  
+  .register .group {
+    height: 100px;
+    left: 767px;
+    position: absolute;
+    top: 40px;
+    width: 389px;
+  }
+  
+  .register .AI-ci-ti {
+    color: transparent;
+    font-family: "Archivo Black-Regular", Helvetica;
+    font-size: 80px;
+    font-weight: 400;
+    left: 120px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    white-space: nowrap;
+    margin-top: 0;
+  }
+  
+  .register .text-wrapper-6 {
+    color: #317ae6;
+  }
+  
+  .register .text-wrapper-7 {
+    color: #151f52;
+  }
+  
+  .register .img {
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+  }
+  
