@@ -1,13 +1,33 @@
 import React, {useState} from 'react'
 import './Register.css'
-import {Tab, Tabs, TextField, IconButton, Button, ToggleButton, ToggleButtonGroup} from '@mui/material'
+
+// Material UI Imports
+import {Tab, Tabs, TextField, IconButton, Button, ToggleButton, ToggleButtonGroup, Alert} from '@mui/material'
 import {Visibility, VisibilityOff} from '@mui/icons-material'
+
 import logo from '../frame-14.svg'
 import line from './line.png'
 import {Link} from 'react-router-dom'
 
+const isEmail = (email) => 
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+
 export const Register = () => {
     const [tabValue, setTabValue] = useState(1);
+
+    // Inputs
+    const [usernameInput, setUsernameInput] = useState();
+    const [emailInput, setEmailInput] = useState();
+    const [passwordInput, setPasswordInput] = useState();
+
+    // Input Errors
+    const [usernameError, setUsernameError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
+
+    // Form Validity
+    const [formValid, setFormValid] = useState();
+    const [success, setSuccess] = useState();
 
     const handleChange = (event, newValue) => {
         setTabValue(newValue); // Update the tab value when a tab is changed
@@ -22,10 +42,71 @@ export const Register = () => {
     const [showPassword, setShowPassword] = React.useState(false);
 
     const handleClickShowPassword = () => setShowPassword((show) => !show);
-
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
+
+    // Print username and password to console when sign up
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        setSuccess(null);
+
+        // if (usernameError || !usernameInput) {
+        //     setFormValid(
+        //         "Username is Between 5-15 characters long. Please Re-Enter"
+        //     )
+        // }
+
+        if (emailError || !emailInput) {
+            setFormValid(
+                "Email is INVALID. Please Re-Enter"
+            )
+            return;
+        }
+
+        if (passwordError || !passwordInput) {
+            setFormValid(
+                "Password is set to 5-20 characters. Please Re-Enter"
+            )
+            return;
+        }
+
+        setFormValid(null);
+        setSuccess("Form Submitted Successfully");
+        
+        console.log(usernameInput);
+        console.log(emailInput);
+        console.log(passwordInput);
+    }
+
+    // Validation for username
+    const handleUsername = () => {
+        if (!usernameInput || usernameInput.length < 5 || usernameInput.length > 20) {
+            setUsernameError(true);
+            return;
+        }
+
+        setUsernameError(false);
+    }
+
+    // Validation for email
+    const handleEmail = () => {
+        if (!isEmail(emailInput)) {
+            setEmailError(true);
+            return;
+        }
+        setEmailError(false);
+    }
+
+    // Validation for password
+    const handlePassword = () => {
+        if (!passwordInput || passwordInput.length < 5 || passwordInput.length > 20) {
+            setPasswordError(true);
+            return;
+        }
+        setPasswordError(false);
+    }
 
     return (
         <div className="register">
@@ -44,11 +125,20 @@ export const Register = () => {
                     </Tabs>
                     <div className='frame-4'>
                         <div className='frame-5'>
-                            <TextField className="input-field-instance" id="username" label="ID or email" variant="outlined" type="text" sx={{m:1, width: '50ch'}}></TextField>
+                            <TextField className="input-field-instance" id="username" label="ID or email" value={emailInput} error={emailError}
+                                onChange={(event) => setEmailInput(event.target.value)} 
+                                onBlur={handleEmail}
+                                variant="outlined" 
+                                type="text" 
+                                sx={{m:1, width: '50ch'}}></TextField>
                             <TextField 
                                 className="input-field-instance" 
                                 id="password" 
-                                label="Password" 
+                                label="Password"
+                                value={passwordInput}
+                                error={passwordError}                                
+                                onChange={(event) => setPasswordInput(event.target.value)}
+                                onBlur={handlePassword}                           
                                 variant="outlined" 
                                 type={showPassword ? 'text' : 'password'} 
                                 sx={{m:1, width: '50ch'}}
@@ -101,7 +191,9 @@ export const Register = () => {
                             </div>
                         </div>
                         <Link to="/home">
-                            <Button className="component-1" variant="contained">LOGIN</Button>
+                            <Button className="component-1" onClick={handleSubmit} variant="contained">LOGIN</Button>
+                            <p>{formValid && (<Alert severity="error">{formValid}</Alert>)}</p>
+                            <p>{success && (<Alert severity="success">{success}</Alert>)}</p>
                         </Link>     
                     </div>  
                 </div>

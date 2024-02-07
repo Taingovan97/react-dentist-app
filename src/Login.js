@@ -20,6 +20,16 @@ function Login() {
     event.preventDefault();
   };
 
+  // handle sign in
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get('email'),
+      password: data.get('password'),
+    });
+  };
+
   return (
     <div className="login">
       <div className="div-2">
@@ -65,7 +75,7 @@ function Login() {
               >
               </TextField>
               <Link to="/home">
-                <Button className="component-1" variant="contained">LOGIN</Button>
+                <Button className="component-1" variant="contained" type='submit'>LOGIN</Button>
               </Link>
 
             </div>
